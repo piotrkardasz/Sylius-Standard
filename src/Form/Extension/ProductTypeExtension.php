@@ -21,10 +21,10 @@ final class ProductTypeExtension extends AbstractTypeExtension
                     'required' => true,
                     'label' => 'app.form.product.color',
                     'choices' => [
-                        'None',
-                        'Red',
-                        'Green',
-                        'Blue',
+                        'None' => 'none',
+                        'Red' => 'red',
+                        'Green' => 'green',
+                        'Blue' => 'blue',
                     ],
                 ]
             );
