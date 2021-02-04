@@ -1,0 +1,10 @@
+{% if product.description is not empty %}
+    <div>
+        <strong>{{ 'sylius.ui.product_color'|trans }}: </strong> {{ product.color|trans }}
+    </div>
+{% endif %}
+{% if product.description is not empty %}
+    {{ product.description | nl2br }}
+{% else %}
+    {{ 'sylius.ui.no_description'|trans }}.
+{% endif %}
