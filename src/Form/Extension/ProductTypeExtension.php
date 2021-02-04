@@ -18,13 +18,13 @@ final class ProductTypeExtension extends AbstractTypeExtension
                 'color',
                 ChoiceType::class,
                 [
-                    'required' => true,
+                    'required' => false,
                     'label' => 'app.form.product.color',
                     'choices' => [
-                        'None' => 'none',
+                        'None' => null,
                         'Red' => 'red',
-                        'Green' => 'green',
                         'Blue' => 'blue',
+                        'Green' => 'green',
                     ],
                 ]
             );
