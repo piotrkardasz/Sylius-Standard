@@ -16,6 +16,11 @@ services:
         # fetching services directly from the container via $container->get() won't work
         public: false
 
+    app.form.extension.type.product:
+        class: App\Form\Extension\ProductTypeExtension
+        tags:
+            - { name: form.type_extension, extended_type: Sylius\Bundle\ProductBundle\Form\Type\ProductType }
+
     _instanceof:
         Sylius\Bundle\ResourceBundle\Controller\ResourceController:
             autowire: false
